@@ -101,16 +101,149 @@
 // showArguments(1, 2, 3, 4);
 // Output: [1, 2, 3, 4]
 
-
 /////////////////////// Recursing Function
 
+// const fibonacci = (n) => {
+//     if(n <= 1){
+//         return n
+//       }
 
-const fibonacci = (n) => {
-  if(n <= 1){
-    return n
-  }
+//       return fibonacci(n - 1) + fibonacci(n - 2)
+//     }
 
-  return fibonacci(n - 1) + fibonacci(n - 2)
-}
+//     // console.log(fibonacci(5));
 
-console.log(fibonacci(5));
+//     console.log(fibonacci(5));
+
+// --------------------------------------------
+
+// function myFunc() {
+//   let num = "jawad";
+//   return num
+// }
+
+// console.log(typeof myFunc()); // output string.
+// // because jo function se return huta ha wohi type hujata ha function ka. agr function call nh kre srf ""myFun"" likh kr type chek kre tu uska type "function" huga
+
+// ********************************************************************
+
+// const obj = {
+//   name: "jawad",
+//   enroll: () => {
+//     console.log("you are succesfully enrolled");
+//   },
+// };
+
+// function createCourse(name) {
+//   return {
+//     name: name,
+//     enroll() {
+//       console.log(`${this.name} you are succesfully enrolled`);
+//     },
+//   };
+// }
+
+// let studentJawad = createCourse("jawad");
+
+// studentJawad.enroll();
+
+// **************************************************************
+
+// const course1  = {
+//   title: "javascript"
+// }
+
+// const course2 = course1;
+
+// course2.title = "C++"
+
+// console.log(course1);
+// console.log(course2); /// 2no ka title change hujaega
+
+// *******************************************************************
+
+// const course1 = {
+//   title : "web-development"
+// }
+
+// const course2 = {...course1};
+
+// course2.title = "Graphic Designer"
+
+// console.log(course1);
+// console.log(course2); // srf course2 ka title change huga...
+
+// *******************************************************************
+
+// const course1 = {
+//     title : "web-development"
+//   }
+//   const course2 = course1;
+
+//   console.log(course1 === course2) // ye 2no true ha q kke reference same ha 2no ka
+
+// *******************************************************************
+
+// const course1 = {
+//     title : "web-development"
+//   }
+//   const course2 = {...course1};
+
+//   console.log(course1 === course2) // ye 2no false ha q kke reference same nh ha alag alag ha
+
+// *******************************************************************
+////////////////////////// ForEach Method ////////////////////
+
+// let names = ["jawad", "noman", "asad", "raza"];
+
+// names.forEach((value) => {
+//   if(value !== "asad"){
+//     console.log(value)
+//   }
+// })
+
+// *******************************************************************
+////////////////////////// Map Method ////////////////////
+
+// let names = ["jawad", "noman", "asad", "raza"];
+
+// let mapArr = names.map((value) => {
+//   return true
+// })
+
+// console.log(mapArr) // [true, true, true, true]: //  because map ma jo return huuga wohi new Array ma chale jaega. magr filter condition "[true, false]" ma chlata ha tu usma true return krne se orignal array ka element new arr ma chale jaega
+
+// *******************************************************************
+////////////////////////// filter Method ////////////////////
+
+// let names = ["jawad", "noman", "asad", "raza"];
+
+// let filterArr = names.filter((value) => {
+//   return true
+// })
+
+// console.log(filterArr) // output: ['jawad', 'noman', 'asad', 'raza'] // because filter condition "[true,false]" se chlta ha agr return true krege tu orignal array ka sara element New Array ma chale jaega true nh jaega : yahi kam map method se krne se new array ma true chale jaega..
+
+// *******************************************************************
+////////////////////////// Object  ////////////////////
+
+// let users = [
+//   { name: "jawad", age: 20, role: "admin" },
+//   { name: "asad", age: 20, role: "user" },
+//   { name: "raza", age: 20, role: "user" },
+//   { name: "farrukh", age: 20, role: "admin" },
+//   { name: "hammad", age: 20, role: "user" },
+// ];
+
+// let obj = {};
+
+// users.forEach((user) => {
+//   if (obj[user.role]) {
+//      obj[user.role].push(user);
+//   } else {
+//     obj[user.role] = [];
+//     obj[user.role].push(user)
+//   }
+// });
+
+// console.log(obj);
