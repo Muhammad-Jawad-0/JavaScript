@@ -247,3 +247,26 @@
 // });
 
 // console.log(obj);
+
+// console.log("anonymouse >>", anonymouse)
+// console.log("annon >>", annon)
+
+// ===========================================
+
+// function binarySearch(arr, target) {
+//   let left = 0, right = arr.length - 1;
+//       //  0        5
+//   while (left <= right) {
+//     let mid = Math.floor((left + right) / 2);
+//     // console.log("Mid HUn >>" , arr[mid])
+//         // 30           30
+//     if (arr[mid] === target) return mid; // Element mil gaya
+//     else if (arr[mid] < target) left = mid + 1; // Right side search karo
+//     else right = mid - 1; // Left side search karo
+//   }
+
+//   return -1; // Element nahi mila
+// }
+
+// let numbers = [10, 20, 30, 40, 50, 60];
+// console.log(binarySearch(numbers, 30));
