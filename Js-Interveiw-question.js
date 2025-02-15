@@ -28,3 +28,28 @@
 // let series = fibonacci(7);
 
 // console.log(series) //[0,1,1,2,3,5,8];
+
+
+// ================= Reverse String using build In Method ==============
+
+// let string = "Muhammd Jawad";
+
+// let reverseString = string.split("").reverse().join("");
+
+
+// console.log(reverseString)
+
+
+// ================= Reverse String with Method ==============
+
+// let string = "Muhammd Jawad"; // l = 13 index = 12
+// let reverseStr = ""
+
+
+// for(let i = string.length - 1; i >= 0; i--){
+//     reverseStr += string[i]
+// }
+
+
+
+// console.log(reverseStr)
