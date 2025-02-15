@@ -270,3 +270,51 @@
 
 // let numbers = [10, 20, 30, 40, 50, 60];
 // console.log(binarySearch(numbers, 30));
+
+// console.log(this)
+
+// function one(params) {
+//     let username = "jawad"
+//     console.log(this.username) //undefined
+// }
+
+// one()
+
+// let a = 10 == 5;
+
+// console.log(a)
+
+// let arr = [1,23,4,5,6,7];
+
+// let map = arr.map((num) => {
+//     return num > 4
+// })
+
+// console.log("map>>", map)
+
+// let fil = arr.filter((num) => {
+//     return num > 4
+// })
+
+// console.log("filter >>", fil)
+
+// let reduce = arr.reduce((acc,curr) => {
+//     return acc + curr
+// },)
+
+// console.log(reduce)
+
+// let find = arr.findLastIndex((num) => {
+//     return num > 4
+// })
+
+// console.log(find);
+
+arr.forEach((num) => { 
+  num = num + 1;
+  console.log(num)
+});
+
+let arr = [1, 5, 23, 4, 5, 6, 7, 3, 5];
+
+

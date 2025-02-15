@@ -7,20 +7,20 @@
 
 // ========================FOR SYMBOL======================
 
-let mySym = Symbol("key1")
+// let mySym = Symbol("key1")
 
 
 
 
-const obj = {
-    name: "jawad",
-    email:"jawad@gmail.com",
-    id:240418580,
-    password: "jawad1122.js",
-    [mySym] : "Key1"
-}
+// const obj = {
+//     name: "jawad",
+//     email:"jawad@gmail.com",
+//     id:240418580,
+//     password: "jawad1122.js",
+//     [mySym] : "Key1"
+// }
 
-console.log(obj[mySym]);
+// console.log(obj[mySym]);
 
 //==========================================
 
@@ -314,3 +314,13 @@ console.log(obj[mySym]);
 // for(let value of arr){
 //     console.log(value); // har us chez ma chlta ha jisma indexes huti ha 
 // }
+
+// let obj = {
+//     apple:200,
+//     banana:150,
+//     orange:120
+// }
+
+// let entriesArr = Object.entries(obj);
+
+// console.log(entriesArr[0])
